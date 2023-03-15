@@ -1,0 +1,69 @@
+{
+  "name": "dashboardvue3",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vue-cli-service serve --open",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test:e2e": "start-server-and-test preview http://localhost:4173 'cypress run --e2e'",
+    "test:e2e:dev": "start-server-and-test 'vite dev --port 4173' http://localhost:4173 'cypress open --e2e'",
+    "test:unit": "cypress run --component",
+    "test:unit:dev": "cypress open --component",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
+    "format": "prettier --write src/"
+  },
+  "dependencies": {
+    "@fullcalendar/core": "5.10.0",
+    "@fullcalendar/daygrid": "5.10.0",
+    "@fullcalendar/interaction": "5.10.0",
+    "@fullcalendar/timegrid": "5.10.0",
+    "@fullcalendar/vue": "5.10.0",
+    "chart.js": "^2.9.4",
+    "core-js": "3.18.3",
+    "d3": "7.1.1",
+    "datamaps": "0.5.9",
+    "element-ui": "2.15.6",
+    "google-maps": "4.3.3",
+    "nprogress": "0.2.0",
+    "perfect-scrollbar": "1.5.2",
+    "register-service-worker": "1.7.2",
+    "sweetalert2": "11.1.8",
+    "topojson": "3.0.2",
+    "vue": "^3.2.47",
+    "vue-chartjs": "3.5.1",
+    "vue-clickaway": "2.2.2",
+    "vue-notifyjs": "0.4.3",
+    "vue-router": "^4.1.6",
+    "vue2-transitions": "0.3.0"
+  },
+  "devDependencies": {
+    "@rushstack/eslint-patch": "^1.2.0",
+    "@vitejs/plugin-vue": "^4.0.0",
+    "@vitejs/plugin-vue-jsx": "^3.0.0",
+    "@vue/cli-plugin-babel": "^5.0.8",
+    "@vue/cli-plugin-pwa": "^5.0.8",
+    "@vue/cli-service": "^5.0.8",
+    "@vue/eslint-config-prettier": "^7.1.0",
+    "babel-plugin-component": "1.1.1",
+    "cypress": "^12.7.0",
+    "eslint": "^8.34.0",
+    "eslint-plugin-cypress": "^2.12.1",
+    "eslint-plugin-vue": "^9.9.0",
+    "prettier": "^2.8.4",
+    "sass": "1.43.2",
+    "sass-loader": "10.2.0",
+    "start-server-and-test": "^2.0.0",
+    "vite": "^4.1.4",
+    "vue-template-compiler": "2.6.14"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 10"
+  ],
+  "engines": {
+    "node": ">= 8.9.0",
+    "npm": ">= 5.0.0"
+  }
+}
